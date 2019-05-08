@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+    <div class="super-bag index-banner-can">
+        {%- include header.html param="home" -%}
+        <div class="super-bag index-banner">
+            <div class="width-888 index-banner-words">
+                <h1>What is Cyclone?</h1>
+                <p>Cyclone is a powerful workflow engine and end-to-end pipeline solution implemented with native Kubernetes resources, with no extra dependencies. It can run anywhere Kubernetes is deployed: public cloud, on-prem or hybrid cloud. </p>
+                <a target="_blank" href="https://github.com/caicloud/cyclone/blob/master/README.md">Readme</a>
+            </div>
+        </div>
+    </div>
+    <div class="super-bag show-somethig-amz-can">
+        <h1 class="h1-guide-road">Key Features</h1>
+        <div class="width-826 show-somethig-amz">
+            {%- for v in site.features -%}
+                {%- if v.long -%}
+                    <div class="somethig-amz-item has-hover remove-hover somethig-amz-item-loong">
+                {%- else -%}
+                    <div class="somethig-amz-item has-hover remove-hover">
+                {%- endif -%}
+                        <div class="somethig-amz-item-img">
+                            <img src="{{v.icon}}" alt=""/>
+                        </div>
+                        <div class="somethig-amz-item-sec">
+                            <h2>{{v.h2}} </h2>
+                            <p>{{v.p}}</p>
+                        </div>
+                    </div>
+            {%- endfor -%}
+        </div>
+    </div>
+    <div class="super-bag snow-men-box bg-ss" id="community">
+        <h1 class="h1-guide-road" >Our Community</h1>
+        <div class="snow-box width-826">
+            {%- for PP in site.comm -%}
+                <a href="{{PP.link}}" target="_blank" class="snow-box-item ">
+                    <div>
+                        <img src="{{ PP.img }}" alt="cyclone"/>
+                    </div>
+                    <p>{{ PP.name  }}</p>
+                </a>
+            {%- endfor -%}
+        </div>
+    </div>

@@ -1,0 +1,142 @@
+
+.index-banner-can{
+    // background: rgb(32, 32, 150);
+    background: url('images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    .index-banner{
+        padding-top:1.6667rem;
+        padding-bottom: 4rem;
+        .index-banner-words{
+            h1{
+                font-family:$font_2;
+                font-size:1.4rem;
+                color:$color_3;
+                letter-spacing: 0.2px;
+                margin-bottom: 0.8333rem;
+            }
+            p{
+                font-family: $font_1;
+                font-size: 0.7rem;
+                color:$color_3;
+                letter-spacing: 0.1px;
+                line-height: 1.0667rem;
+                display: block;
+                max-width: 21.3rem;
+                margin-bottom: 1rem;
+                word-break:normal;
+                word-wrap:break-word;
+            }
+            a{
+                display: block;
+                width: 6.6667rem;
+                height: 2rem;
+                line-height: 2rem;
+                background: $color_2;
+                box-shadow: 0 2px 4px 0 $color_4;
+                border-radius: 0.2667rem;
+                font-family: $font_1;
+                color:$color_3;
+                font-size: 0.9333rem;
+                letter-spacing: 0.14px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.show-somethig-amz-can{
+    padding-top:2.5667rem;
+    padding-bottom: 4.3333rem;
+    h1{
+        margin-bottom: 1.6rem;
+    }
+    .show-somethig-amz{
+        @include flex();
+        @include flex-align-items(center);
+        @include flex-justify-content(space-between);
+        flex-wrap: wrap;
+        .somethig-amz-item{
+            width:49%;
+            padding:0.7667rem 1.1667rem;
+            margin-bottom: 0.6rem;
+            flex-shrink: 0;
+            border: 1px solid transparent;
+            @include flex();
+            @include flex-align-items(flex-start);
+            &.somethig-amz-item-loong{
+                padding:0.4333rem 1.1667rem;
+                @include flex-align-items(center);
+            }
+            &.has-hover:hover{
+                background: $color_3;
+                border: 1px solid $color_2;
+                box-shadow: 1px 2px 5px 0 rgba(121,190,170,0.41);
+            }
+            .somethig-amz-item-img{
+                width:3.0667rem;
+                height:3.0667rem;
+                // background: $color_1;
+                flex-shrink: 0;
+                margin-right: 0.7667rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .somethig-amz-item-sec{
+                h2{
+                    font-family:$font_2;
+                    color:$color_6;
+                    margin-bottom: 0.3667rem;
+                    font-size: 0.7rem;
+                }
+                p{
+                    font-family: $font_1;
+                    color:$color_7;
+                    line-height: 0.8rem;
+                    letter-spacing: 0.15px;
+                    display: block;
+                    max-width: 392px;
+                }
+            }
+        }
+    }
+}
+
+.snow-men-box{
+    padding-top:2.5667rem;
+    padding-bottom: 3.3333rem;
+    &>h1{
+        margin-bottom: 2.6rem;
+    }
+    .snow-box{
+        @include flex();
+        @include flex-justify-content(space-between);
+        padding:0 15%;
+        .snow-box-item{
+            width:5rem;
+            margin-right:1%;
+            margin-bottom: 1rem;
+            &.last-now{
+                margin-right: 0;
+            }
+            div{
+                width:3.3333rem;
+                height: 3.3333rem;
+                // background:$color_3;
+                margin: 0 auto 0.6667rem auto;
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+                font-family: $font_2;
+                font-size: 0.7rem;
+                color: $color_6;
+                letter-spacing: 0.11px;
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

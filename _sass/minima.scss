@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+
+
+$font_1:'ArialMT';
+// $font_2:' Arial-BoldMT';
+$font_2:"-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica","Arial","sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$font_3:'Arial-ItalicMT';
+
+$color_1:#D2D8DF;
+$color_2:#50E3C2;
+$color_3:#ffffff;
+$color_4:rgba(0,0,0,0.50);
+$color_5:rgba(255,255,255,1);
+$color_6:#000000;
+$color_7: #4A4A4A;
+$color_8: rgba(206,226,246,0.47);
+$color_9:#E2E6EA;
+$color_10:#8FA3BB;
+$color_11:#E9E9E9;
+$color_12:rgba(255,255,255,0.51);
+
+$sun_1: #6069DB;
+$sun_2: #180D5B;
+$sun_3: #34658E;
+$sun_4: #50E3C2;
+
+@mixin bg-color-change($way,$color_dot_1,$color_dot_2,$color_dot_3){
+  background-image: -webkit-linear-gradient($way,$color_dot_1,$color_dot_2,$color_dot_3); /* Safari 5.1-6.0 */
+  background-image: -o-linear-gradient($way,$color_dot_1,$color_dot_2,$color_dot_3); /* Opera 11.1-12.0 */
+  background-image: -moz-linear-gradient($way,$color_dot_1,$color_dot_2,$color_dot_3); /* Firefox 3.6-15 */
+  background-image: linear-gradient($way,$color_dot_1,$color_dot_2,$color_dot_3); /* 标准语法 */
+}
+
+@mixin bg-color-change-two($way,$color_dot_1,$color_dot_2){
+  background-image: -webkit-linear-gradient($way,$color_dot_1,$color_dot_2); /* Safari 5.1-6.0 */
+  background-image: -o-linear-gradient($way,$color_dot_1,$color_dot_2); /* Opera 11.1-12.0 */
+  background-image: -moz-linear-gradient($way,$color_dot_1,$color_dot_2); /* Firefox 3.6-15 */
+  background-image: linear-gradient($way,$color_dot_1,$color_dot_2); /* 标准语法 */
+}
+
+@mixin flex(){
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+@mixin flex-align-items($sec){
+    -moz-box-align: $sec;
+    -webkit-box-align: $sec;
+    -ms-flex-align:$sec;
+    -webkit-align-items: $sec;
+    align-items: $sec;
+}
+@mixin flex-justify-content($sec){
+    -moz-box-pack:$sec;
+    -webkit-box-pack:$sec;
+    -ms-flex-pack:$sec;
+    -webkit-justify-content:$sec;
+    justify-content:$sec;
+}
+@mixin flex-number($number){
+  -webkit-box-flex: $number;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: $number;         /* OLD - Firefox 19- */
+  -webkit-flex: $number;          /* Chrome */
+  -ms-flex: $number;              /* IE 10 */
+  flex: $number;
+}
+@mixin flex-order($number) {
+  -webkit-box-ordinal-group: $number;
+  -moz-box-ordinal-group: $number;
+  -ms-flex-order: $number;
+  -webkit-order: $number;
+  order: $number;
+}
+@mixin flex-algin-content($de){
+  -webkit-box-align: $de;
+  -moz-box-align: $de;
+  -ms-flex-line-pack: $de;
+  -webkit-align-content: $de;
+  align-content: $de;
+}
+@mixin wordsMany($o){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $o;
+  overflow: hidden;
+}
+
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #2a7ae2 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting",
+  "minima/index",
+  "minima/docs",
+  "minima/media"
+;
