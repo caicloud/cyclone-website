@@ -1,0 +1,165 @@
+// 404
+.container {
+    margin: 0px auto;
+    max-width: 600px;
+    text-align: center;
+    min-height: 60vh;
+}
+.color-of-docs{
+    @include bg-color-change-two(-90deg,#180D5B 0%,#21176B 100%);
+}
+.docs-box{
+    .docs-box-wrap{
+        padding:2.3333rem 0;
+        .docs-box-inner{
+            display: block;
+            padding:0.6667rem 6% 1rem 3%;
+            margin-bottom: 2rem;
+            h2{
+                font-family: $font_1;
+                font-size: 1.2rem;
+                color: $color_6;
+                margin-bottom: 0.6667rem;
+            }
+            p{
+                font-family: $font_1;
+                font-size: 0.8rem;
+                color: $color_7;
+                text-align: justify;
+                line-height: 1.2rem;
+                word-break : normal;
+            }
+        }
+        .a1-docs-box-inner{
+            border-left:0.3333rem solid $sun_1;
+        }
+        .a2-docs-box-inner{
+            border-left:0.3333rem solid $sun_2;
+        }
+        .a3-docs-box-inner{
+            border-left:0.3333rem solid $sun_3;
+        }
+        .a4-docs-box-inner{
+            border-left:0.3333rem solid $sun_4;
+        }
+    }
+}
+
+.when-summer-come{
+    padding:3.6rem 0 1.6667rem 0;
+    .when-summer-come-box{
+        @include flex();
+        @include flex-justify-content(center);
+        flex-wrap: wrap;
+        .when-summer-item{
+            width: 50%;
+            @include flex();
+            margin-bottom: 3.3333rem;
+            .when-summer-item-img{
+                flex-shrink: 0;
+                width: 3.4667rem;
+                height: 3.4667rem;
+                margin-right:0.6667rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .when-summer-item-sec{
+                h2{
+                    font-family: $font_2;
+                    font-size: 0.9333rem;
+                    color: $color_6;
+                    letter-spacing: 0.23px;
+                    margin-bottom: 0.3667rem;
+                }
+                p{
+                    font-family: $font_1;
+                    font-size: 0.6rem;
+                    color: $color_7;
+                    letter-spacing: 0.15px;
+                    line-height: 1.0333rem;
+                }
+                a{
+                    font-family: $font_3;
+                    font-size: 0.6rem;
+                    color: $color_6;
+                    letter-spacing: 0.15px;
+                    line-height: 1.0333rem;
+                    border-bottom:  0.1rem solid $color_2;
+                }
+            }
+        }
+    }
+}
+
+// 博客
+.blog-banner-box{
+    overflow: hidden;
+    @include bg-color-change(142deg, #180D5B 0%, #387094 42%, rgba(80,227,194,0.48) 100%);
+    h1{
+        font-family: $font_1;
+        font-size: 1.4rem;
+        color: $color_3;
+        letter-spacing: 0.34px;
+        text-align: center;
+        line-height: 2.1667rem;
+        max-width: 37.2333rem;
+        width: 80%;
+        margin:3.6rem auto 3.5rem auto;
+    }
+}
+.blog-box{
+    padding-top:3.1333rem;
+    padding-bottom: 3.3333rem;
+    .blog-box-can{
+        .blog-box-can-item{
+            @include flex();
+            margin-bottom: 1.6667rem;
+            .blog-box-can-item-left{
+                width:8.5667rem;
+                margin-right:4%;
+                .image{
+                    width: 100%;
+                    max-height: 8.0667rem;
+                    overflow: hidden;
+                    img{
+                        width: 8.5667rem;
+                        margin-bottom: 0.6667rem;
+                    }
+                }
+                div.image-more{
+                    border-left:0.1333rem solid $color_2;
+                    span{
+                        display: block;
+                        font-family: $font_1;
+                        font-size: 0.6rem;
+                        color: $color_7;
+                        letter-spacing: 0.15px;
+                        &.date{
+                            margin-bottom: 0.3334rem;
+                        }
+                    }
+                }
+            }
+            .blog-box-can-item-right{
+                padding-top:0.6667rem;
+                h1{
+                    font-family: $font_1;
+                    font-size: 1.2rem;
+                    color: $color_6;
+                    letter-spacing: 0.29px;
+                    margin-bottom:0.6667rem;
+                }
+                p{
+                    font-family: $font_1;
+                    font-size: 0.8rem;
+                    color: $color_7;
+                    letter-spacing: 0.2px;
+                    line-height: 1.2rem;
+                    @include wordsMany(5);
+                }
+            }
+        }
+    }
+}

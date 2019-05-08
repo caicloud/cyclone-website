@@ -1,0 +1,105 @@
+* {box-sizing: border-box;-webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparent;-moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */}
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,svg,a,span,img{margin:0;padding:0;font-size:100%;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;margin:0;padding: 0;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+// h1,h2,h3,h4,h5,h6,small{}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
+// h1,h2,h3,h4,h5,h6{font-weight:400;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:14px;color:#333;outline:0;}
+body{background:#fff;}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust:none;}
+a,a:hover,a:active,a:visited,a:link,a:focus,li,ul,div:hover,div:active,div:visited,div:link,div:focus{
+  -moz-user-focus: none;
+  -webkit-tap-highlight-color: transparent;
+  outline:none;
+  text-decoration: none;
+}
+a{
+  color:#333333;
+}
+input{
+  //去掉iOS上点击input的灰色背景
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-appearance: none;
+}
+a,button,input,img{
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border: 0; /* 方法1 */
+  -webkit-appearance: none; /* 方法2 */
+}
+
+// h1,h2,h3,h4,h5,h6,dl,dt,dd,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,svg,a{
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+// }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-weight: 400;
+  font-size: 1pc;
+  background: #ffffff;
+}
+a,button,input,textarea{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html,body{width:100%;height:auto;}
+
+html{
+    font-size:30px;
+    @include bg-color-change-two(0deg,#ffffff 0%,#180D5B 100%);
+}
+/*去掉safari中的默认图标*/
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+// 选中的颜色
+// ::selection {
+//   background:rgba(255,247,228,1);
+//   color: #3C3C3C;
+// }
+
+// ::-moz-selection {
+//   background:rgba(255,247,228,1);
+//   color: #3C3C3C;
+// }
+
+// ::-webkit-selection {
+//   background:rgba(255,247,228,1);
+//   color: #3C3C3C;
+// }
+// ::-webkit-scrollbar-thumb {
+//   border-radius: 3px;
+//   background: rgba(92,110,130,.6);
+// }
+// ::-webkit-scrollbar-track-piece {
+//   opacity: 0;
+// }
+// ::-webkit-scrollbar-track {
+//   background: none;
+// }
+// ::-webkit-scrollbar{
+//   display: none;
+// }
+
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}

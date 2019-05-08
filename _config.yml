@@ -1,0 +1,153 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your 亚哈
+email: do not tell email
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+# 首页的数据
+features:
+  -
+    h2: DAG(Directed Acyclic Graph) scheduling
+    p: Cyclone supports DAG workflow execution
+    icon: /assets/images/f1.png
+    long: false
+  -
+    h2: Parameterization
+    p: Stage (unit of execution) can be parameterized to maximize configuration reuse
+    icon: /assets/images/f2.png
+    long: false
+  -
+    h2: External integration
+    p: External systems like SCM, docker registry, S3 can be easily integrated with Cyclone
+    icon: /assets/images/f3.png
+    long: false
+  -
+    h2: Triggers
+    p: Cyclone supports cron and webhook trigger today, with upcoming support for other types of triggers
+    icon: /assets/images/f4.png
+    long: false
+  -
+    h2: Controllability
+    p: Workflow execution can be paused, resumed, retried or cancelled
+    icon: /assets/images/f5.png
+    long: false
+  -
+    h2: Multi-cluster
+    p: Workflow can be executed in different clusters from where Cyclone is running
+    icon: /assets/images/f6.png
+    long: false
+  -
+    h2: Multi-tenancy
+    p: Resource manifests and workflow executions are grouped and isolated per tenant
+    icon: /assets/images/f7.png
+    long: false
+  -
+    h2: Garbage Collection
+    p: Automatic resource cleanup after workflow execution
+    icon: /assets/images/f8.png
+    long: false
+  -
+    h2: Logging
+    p: Logs are persisted and independent from workflow lifecycle, enabling offline inspection
+    icon: /assets/images/f9.png
+    long: false
+  -
+    h2: Built-in Pipeline
+    p: Curated DAG templates and stage runtimes for running DevOps pipelines for both regular software and AI development
+    icon: /assets/images/f10.png
+    long: true
+# community
+comm:
+  -
+    img: /assets/images/co1.png
+    link: https://twitter.com/CycloneWorkflow
+    name: Twitter
+    p: Follow us on Twitter to get the latest news
+    spec: https://twitter.com/CycloneWorkflow
+  -
+    img: /assets/images/co2.png
+    link: https://caicloud-cyclone.slack.com
+    name: Slack
+    p: Join slack to chat with other developers
+    spec: https://caicloud-cyclone.slack.com
+  -
+    img: /assets/images/co3.png
+    link: https://cyclone-users.googlegroups.com
+    name: Users Groups
+    p: Join user group to discuss usage issues
+    spec: cyclone-users.googlegroups.com
+  -
+    img: /assets/images/co4.png
+    link: https://cyclone-dev.googlegroups.com
+    name: Developers Groups
+    p: Join developer group to discuss development issues
+    spec: cyclone-dev.googlegroups.com
+
+
+# features: [{h2:'DAG(Directed Acyclic Graph) scheduling',p:'Cyclone supports DAG workflow execution',icon:'/assets/images/f1.png',long:false},{h2:'Parameterization',p:'Stage (unit of execution) can be parameterized to maximize configuration reuse',icon:'/assets/images/f2.png',long:false},{h2:'External integration',p:'External systems like SCM, docker registry, S3 can be easily integrated with Cyclone',icon:'/assets/images/f3.png',long:false},{h2:'Triggers',p:'Cyclone supports cron and webhook trigger today, with upcoming support for other types of triggers',icon:'/assets/images/f4.png',long:false},{h2:'Controllability',p:'Workflow execution can be paused, resumed, retried or cancelled',icon:'/assets/images/f5.png',long:false},{h2:'Multi-cluster',p:'Workflow can be executed in different clusters from where Cyclone is running',icon:'/assets/images/f6.png',long:false},{h2:'Multi-tenancy',p:'Resource manifests and workflow executions are grouped and isolated per tenant',icon:'/assets/images/f7.png',long:false},{h2:'Garbage Collection ',p:'Automatic resource cleanup after workflow execution',icon:'/assets/images/f8.png',long:false},{h2:'Logging',p:'Logs are persisted and independent from workflow lifecycle, enabling offline inspection',icon:'/assets/images/f9.png',long:false},{h2:'Built-in Pipeline',p:'Curated DAG templates and stage runtimes for running DevOps pipelines for both regular software and AI development',icon:'/assets/images/f10.png',long:true}]
+# comm: [{img:"/assets/images/co1.png",name:"Twitter",link:"https://twitter.com/CycloneWorkflow"},{img:"/assets/images/co2.png",name:"Slack",link:"https://caicloud-cyclone.slack.com"},{img:"/assets/images/co3.png",name:"Users Groups",link:"https://cyclone-users.googlegroups.com"},{img:"/assets/images/co4.png",name:"Developers Groups",link:"https://cyclone-dev.googlegroups.com"}]
+
+# Docs页面的数据
+docList:
+  -
+    h2: Architecture
+    p: Cyclone is a powerful workflow engine with end-to-end pipeline solutions (such as CI/CD and AI DevOps) implemented with native Kubernetes resources. Cyclone is architectured with a low-level workflow engine that is application agnostic, offering capabilities like workflow Directed Acyclic Graph (DAG) scheduling, resource lifecycle management, and etc.
+    link: https://github.com/caicloud/cyclone/blob/master/docs/design.md
+    oo: a1
+  -
+    h2: Installation Guide
+    p: Cyclone is kubernetes native with no extra dependencies. It can be  easily installed and run anywhere Kubernetes is deployed.
+    link: https://github.com/caicloud/cyclone/blob/master/docs/installation.md
+    oo: a2
+  -
+    h2: User Guide
+    p: Cyclone provides built-in support for high-level functionality  is possible to expand to more use cases for Cyclone as well. With Cyclone, users end up with the flexibility of workflow orchestration and the usability of complete CI/CD and AI Devops solutions.
+    link: https://github.com/caicloud/cyclone/blob/master/docs/user_guide.md
+    oo: a3
+  -
+    h2: Roadmap
+    p: Cyclone provides built-in support for high-level functionality  is possible to expand to more use cases for Cyclone as well. With Cyclone, users end up with the flexibility of workflow orchestration and the usability of complete CI/CD and AI Devops solutions.
+    link: https://github.com/caicloud/cyclone/blob/master/docs/ROADMAP.md
+    oo: a4
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+paginate: 6
+paginate_path: "blog/page:num"
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

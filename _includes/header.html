@@ -1,0 +1,43 @@
+
+
+{%- case include.param -%}
+    {%-  when 'home' -%}
+        {%- assign home='just-this-page'  -%}
+    {%- when 'docs'  -%}
+        {%- assign docs='just-this-page'  -%}
+    {%- when 'blog'  -%}
+        {%- assign blog='just-this-page'  -%}
+    {%- when 'community'  -%}
+        {%- assign community='just-this-page'  -%}
+{%- endcase -%}
+
+<div class="super-bag header-can">
+    <div class="width-888 header-munu-can">
+        <a class="logo-of-header" href="/">
+            <img src="/assets/images/logo.png" alt=""/>
+        </a>
+        <div class="choice-of-header">
+            <a href="/" class="{{ home | default: ''}}">Home</a>
+            <a target="_blank" class="{{ docs | default: ''}}" href="https://github.com/caicloud/cyclone/tree/master/docs">Docs</a>
+            <a target="_blank" class="{{ blog | default: ''}}" href="https://github.com/caicloud/cyclone/tree/master/docs">Blog</a>
+            <a href="/#community" class="{{ community | default: ''}}">Community</a>
+        </div>
+    </div>
+</div>
+<div class="super-bag choice-of-header-fixed header-can-no-show">
+    <div class="width-888 header-munu-choice">
+        <div class="top-header-oood">
+            <a class="logo-of-header" href="/">
+                <img src="/assets/images/logo.png" alt=""/>
+            </a>
+            <span class="logo-close-can">
+            </span>
+        </div>
+        <div class="choice-of-header">
+            <a href="/">Home</a>
+            <a target="_blank" href="https://github.com/caicloud/cyclone/tree/master/docs">Docs</a>
+            <a target="_blank" href="https://github.com/caicloud/cyclone/tree/master/docs">Blog</a>
+            <a href="/#community">Community</a>
+        </div>
+    </div>
+</div>
