@@ -111,7 +111,7 @@
     .snow-box{
         @include flex();
         @include flex-justify-content(space-between);
-        padding:0 15%;
+        padding:0 0;
         .snow-box-item{
             width:5rem;
             margin-right:1%;

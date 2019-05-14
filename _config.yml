@@ -13,16 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your 亚哈
-email: do not tell email
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: Cyclone
+github_username:  Cyclone
 # 首页的数据
 features:
   -
@@ -42,7 +36,7 @@ features:
     long: false
   -
     h2: Triggers
-    p: Cyclone supports cron and webhook trigger today, with upcoming support for other types of triggers
+    p: Cyclone supports cron and webhook trigger
     icon: /assets/images/f4.png
     long: false
   -
@@ -91,13 +85,13 @@ comm:
     spec: https://caicloud-cyclone.slack.com
   -
     img: /assets/images/co3.png
-    link: https://cyclone-users.googlegroups.com
+    link: https://groups.google.com/forum/#!forum/cyclone-users
     name: Users Groups
     p: Join user group to discuss usage issues
     spec: cyclone-users.googlegroups.com
   -
     img: /assets/images/co4.png
-    link: https://cyclone-dev.googlegroups.com
+    link: https://groups.google.com/forum/#!forum/cyclone-dev
     name: Developers Groups
     p: Join developer group to discuss development issues
     spec: cyclone-dev.googlegroups.com
@@ -135,7 +129,9 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
-paginate: 6
+
+# 博客分页设置
+paginate: 7
 paginate_path: "blog/page:num"
 
 

@@ -1,4 +1,13 @@
 $(function(){
+    // 懒加载背景图片
+    // $('.come-up-later').each(function(){
+    //     var bg_C=$(this).attr('bg-data');
+    //     $(this).css({
+    //         'background':`url('${bg_C}') no-repeat center center`,
+    //         'background-size':'cover',
+    //     })
+    // })
+    // 版权的年限
     var yearNow=(new Date()).getFullYear();
     if(yearNow==2019){
         $('.year-now').text('2019')

@@ -8,7 +8,7 @@ permalink: /docs/
 <div class="super-bag docs-box">
     <div class="width-763 docs-box-wrap">
         {%- for item in site.docList -%}
-            <a href="{{item.link}}" target="_blank" class="{{ "-docs-box-inner docs-box-inner" | prepend: item.oo}}">
+            <a href="{{item.link}}" target="_blank" class="{{ "-docs-box-inner docs-box-inner has-hover remove-hover" | prepend: item.oo}}">
                 <h2>{{item.h2}}</h2>
                 <p>{{item.p}}</p>
             </a>
