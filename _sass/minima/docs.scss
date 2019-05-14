@@ -1,9 +1,27 @@
 // 404
 .container {
     margin: 0px auto;
-    max-width: 600px;
-    text-align: center;
     min-height: 60vh;
+}
+.when-error-happen{
+    padding-top:10vh;
+    h1{
+        font-size: 2rem;
+        text-align: center;
+        font-family: $font_2;
+        padding-bottom:0.6667rem;
+    }
+    h2{
+        font-family: $font_2;
+        font-size: 1rem;
+        padding-bottom: 0.6667rem;
+        text-align: center;
+    }
+    p{
+        font-size: 0.6667rem;
+        text-align: center;
+        line-height: 1.0667rem;
+    }
 }
 .color-of-docs{
     @include bg-color-change-two(-90deg,#180D5B 0%,#21176B 100%);
@@ -14,7 +32,7 @@
         .docs-box-inner{
             display: block;
             padding:0.6667rem 6% 1rem 3%;
-            margin-bottom: 2rem;
+            margin-bottom: 1.3333rem;
             h2{
                 font-family: $font_1;
                 font-size: 1.2rem;
@@ -23,24 +41,36 @@
             }
             p{
                 font-family: $font_1;
-                font-size: 0.8rem;
+                font-size: 0.6rem;
                 color: $color_7;
                 text-align: justify;
-                line-height: 1.2rem;
+                line-height: 1rem;
                 word-break : normal;
             }
         }
         .a1-docs-box-inner{
             border-left:0.3333rem solid $sun_1;
+            &.has-hover:hover{
+                background: $sun_1_0;
+            }
         }
         .a2-docs-box-inner{
             border-left:0.3333rem solid $sun_2;
+            &.has-hover:hover{
+                background: $sun_2_0;
+            }
         }
         .a3-docs-box-inner{
             border-left:0.3333rem solid $sun_3;
+            &.has-hover:hover{
+                background: $sun_3_0;
+            }
         }
         .a4-docs-box-inner{
             border-left:0.3333rem solid $sun_4;
+            &.has-hover:hover{
+                background: $sun_4_0;
+            }
         }
     }
 }
@@ -55,6 +85,7 @@
             width: 50%;
             @include flex();
             margin-bottom: 3.3333rem;
+            padding-right:3%;
             .when-summer-item-img{
                 flex-shrink: 0;
                 width: 3.4667rem;
@@ -119,17 +150,19 @@
             .blog-box-can-item-left{
                 width:8.5667rem;
                 margin-right:4%;
+                flex-shrink: 0;
                 .image{
                     width: 100%;
                     max-height: 8.0667rem;
+                    margin-bottom: 0.6667rem;
                     overflow: hidden;
                     img{
-                        width: 8.5667rem;
-                        margin-bottom: 0.6667rem;
+                        width: 100%;
                     }
                 }
                 div.image-more{
                     border-left:0.1333rem solid $color_2;
+                    padding-left:1rem;
                     span{
                         display: block;
                         font-family: $font_1;
@@ -150,13 +183,18 @@
                     color: $color_6;
                     letter-spacing: 0.29px;
                     margin-bottom:0.6667rem;
+                    a{
+                        &:hover{
+                            color:$color_2;
+                        }
+                    }
                 }
                 p{
                     font-family: $font_1;
-                    font-size: 0.8rem;
-                    color: $color_7;
+                    font-size: 0.6rem;
+                    color: $color_13;
                     letter-spacing: 0.2px;
-                    line-height: 1.2rem;
+                    line-height: 1rem;
                     @include wordsMany(5);
                 }
             }

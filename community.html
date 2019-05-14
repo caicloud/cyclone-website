@@ -6,8 +6,8 @@ permalink: /community/
     {%- include header.html param="community" -%}
 </div>
 
-<div class="super-bag when-summer-come">
-    <div class="width-763 when-summer-come-box">
+<div class="container super-bag when-summer-come">
+    <div class="width-763-change-more when-summer-come-box">
         {%- for item in site.comm -%}
             <div href="{{item.link}}" class="when-summer-item">
                 <div class="when-summer-item-img">
@@ -16,7 +16,7 @@ permalink: /community/
                 <div class="when-summer-item-sec">
                     <h2>{{item.name}}</h2>
                     <p>{{item.p}}</p>
-                    <a href="{{item.link}}">{{item.spec}}</a>
+                    <a href="{{item.link}}" target="_blank">{{item.spec}}</a>
                 </div>
             </div>
         {%- endfor -%}

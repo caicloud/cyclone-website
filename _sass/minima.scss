@@ -19,11 +19,17 @@ $color_9:#E2E6EA;
 $color_10:#8FA3BB;
 $color_11:#E9E9E9;
 $color_12:rgba(255,255,255,0.51);
+$color_13:#636363;
 
+$sun_0: #cccccc;
 $sun_1: #6069DB;
+$sun_1_0: rgba(96, 105, 219,0.1);
 $sun_2: #180D5B;
+$sun_2_0: rgba(24, 13, 91,0.1);
 $sun_3: #34658E;
+$sun_3_0: rgba(52, 101, 142,0.1);
 $sun_4: #50E3C2;
+$sun_4_0: rgba(80, 227, 194,0.1);
 
 @mixin bg-color-change($way,$color_dot_1,$color_dot_2,$color_dot_3){
   background-image: -webkit-linear-gradient($way,$color_dot_1,$color_dot_2,$color_dot_3); /* Safari 5.1-6.0 */

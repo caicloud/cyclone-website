@@ -13,7 +13,12 @@
   max-width: 39.6667rem;
   margin:0 auto;
 }
-.width-763{
+.width-526{
+    width:52.6388%;
+    max-width: 33.3333rem;
+    margin:0 auto;
+}
+.width-763,.width-763-change-more{
     width:76.3%;
     max-width: 36.6667rem;
     margin:0 auto;
@@ -80,7 +85,7 @@
   left: 0;
   right:0;
   bottom:0;
-  height: 3.3333rem;
+  height: 2.6667rem;
   overflow: hidden;
   z-index: 2;
   a{
@@ -168,10 +173,19 @@
               }
               ul{
                   width: 100%;
+                  @include flex();
+                  .spring-last-top-choice-can{
+                    width: 49.5%;
+                    height: auto;
+                    display: inline-block;
+                    .no-pc-show{
+                        display: none;
+                    }
+                  }
                   li{
-                      width: 49.5%;
+                      width:100%;
                       height: auto;
-                      display: inline-block;
+                      display:block;
                   }
               }
           }
@@ -187,4 +201,45 @@
           }
       }
   }
+}
+// 页码
+.pagination{
+    @include flex();
+    @include flex-justify-content(flex-end);
+    @include flex-align-items(center);
+    margin-bottom: 2rem;
+    .page_number{
+        height:1rem;
+        margin:0 0.1667rem;
+        width: 1rem;
+        border:1px solid $grey-color;
+        color: $grey-color;
+        text-align: center;
+        line-height: 1rem;
+        border-radius: 0.0667rem;
+        &.has-hover:hover{
+            color: $color_3;
+            background: $color_2;
+            border-color:$color_2;
+        }
+    }
+    .previous,.next{
+        height: 1rem;
+        padding:0 0.3333rem;
+        border-radius: 0.0667rem;
+        line-height: 1rem;
+        color:$grey-color;
+    }
+    span.previous,span.next{
+        color:$sun_0;
+    }
+    a.previous,a.next{
+        &.has-hover:hover{
+            color: $color_2;
+        }
+    }
+    .page_number-now{
+        color:$color_2;
+        border-color: $color_2;
+    }
 }

@@ -24,8 +24,14 @@
     html{
         font-size: 24px;
     }
+    .width-763-change-more{
+        width: 82%;
+    }
 }
 @media (max-width:1120px) and (min-width:30px) {
+    .width-526{
+        width: 52.5%;
+    }
     .show-somethig-amz-can .show-somethig-amz{
         @include flex-align-items(flex-start);
         .somethig-amz-item{
@@ -48,6 +54,10 @@
                     li{
                         width:50%;
                     }
+                    .spring-last-top-choice-can .no-pc-show{
+                        display: block;
+                        height: 23px;
+                    }
                 }
                 .many-chice a{
                     width: 95%;
@@ -59,7 +69,20 @@
         }
     }
 }
+@media (max-width:865px) and (min-width:550px) {
+    .when-summer-come .when-summer-come-box{
+        .when-summer-item{
+            width: 70%;
+        }
+    }
+}
 @media (max-width:820px) and (min-width:30px) {
+    .blog-box .blog-box-can .blog-box-can-item{
+        flex-direction: column;
+        .blog-box-can-item-left{
+            width: 100%;
+        }
+    }
     .docs-box .docs-box-wrap .docs-box-inner{
         padding-left:1rem;
     }
@@ -84,8 +107,32 @@
     }
 }
 @media (max-width:550px) and (min-width:30px) {
-    .width-763{
+    .width-763,.width-736{
         width:80%;
+    }
+    .blog-banner-box h1{
+        width: 90%;
+        margin:2rem auto 1.6667rem auto;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .when-summer-come .when-summer-come-box{
+        .when-summer-item{
+            padding-left: 3%;
+            width: 100%;
+            flex-direction: column;
+            @include flex-justify-content(center);
+            @include flex-align-items(center);
+            .when-summer-item-img{
+                margin-right: 0;
+            }
+            .when-summer-item-sec{
+                h2,p,a{
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
     }
     .snow-men-box .snow-box .snow-box-item div{
         width: 3.3333rem;
