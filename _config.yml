@@ -37,7 +37,7 @@ features:
     long: false
   -
     h2: Triggers
-    p: Cyclone supports cron and webhook trigger
+    p: Cyclone supports both cron and webhook triggers
     icon: /assets/images/f4.png
     long: false
   -
@@ -120,7 +120,7 @@ docList:
     oo: a3
   -
     h2: Roadmap
-    p: Cyclone provides built-in support for high-level functionality  is possible to expand to more use cases for Cyclone as well. With Cyclone, users end up with the flexibility of workflow orchestration and the usability of complete CI/CD and AI Devops solutions.
+    p: Cyclone has provided many features. More work will be done in the near future to make it easier to use and meet more requirements.
     link: https://github.com/caicloud/cyclone/blob/master/docs/ROADMAP.md
     oo: a4
 
