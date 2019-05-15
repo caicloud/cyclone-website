@@ -51,9 +51,6 @@
                 ul{
                     @include flex();
                     flex-wrap: wrap;
-                    li{
-                        width:50%;
-                    }
                     .spring-last-top-choice-can .no-pc-show{
                         display: block;
                         height: 23px;

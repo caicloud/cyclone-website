@@ -17,6 +17,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Cyclone
 github_username:  Cyclone
+version: 11111   # css 和 js可能因为浏览器缓存的原因导致一些问题，所以更改了 css 或 js 后，最好也修改这里的值
 # 首页的数据
 features:
   -
