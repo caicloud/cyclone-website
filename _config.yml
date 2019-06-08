@@ -80,10 +80,10 @@ comm:
     spec: https://twitter.com/CycloneWorkflow
   -
     img: /assets/images/co2.png
-    link: https://caicloud-cyclone.slack.com
+    link: https://cycloneworkflow.slack.com
     name: Slack
     p: Join slack to chat with other developers
-    spec: https://caicloud-cyclone.slack.com
+    spec: https://cycloneworkflow.slack.com
   -
     img: /assets/images/co3.png
     link: https://groups.google.com/forum/#!forum/cyclone-users
@@ -99,7 +99,7 @@ comm:
 
 
 # features: [{h2:'DAG(Directed Acyclic Graph) scheduling',p:'Cyclone supports DAG workflow execution',icon:'/assets/images/f1.png',long:false},{h2:'Parameterization',p:'Stage (unit of execution) can be parameterized to maximize configuration reuse',icon:'/assets/images/f2.png',long:false},{h2:'External integration',p:'External systems like SCM, docker registry, S3 can be easily integrated with Cyclone',icon:'/assets/images/f3.png',long:false},{h2:'Triggers',p:'Cyclone supports cron and webhook trigger today, with upcoming support for other types of triggers',icon:'/assets/images/f4.png',long:false},{h2:'Controllability',p:'Workflow execution can be paused, resumed, retried or cancelled',icon:'/assets/images/f5.png',long:false},{h2:'Multi-cluster',p:'Workflow can be executed in different clusters from where Cyclone is running',icon:'/assets/images/f6.png',long:false},{h2:'Multi-tenancy',p:'Resource manifests and workflow executions are grouped and isolated per tenant',icon:'/assets/images/f7.png',long:false},{h2:'Garbage Collection ',p:'Automatic resource cleanup after workflow execution',icon:'/assets/images/f8.png',long:false},{h2:'Logging',p:'Logs are persisted and independent from workflow lifecycle, enabling offline inspection',icon:'/assets/images/f9.png',long:false},{h2:'Built-in Pipeline',p:'Curated DAG templates and stage runtimes for running DevOps pipelines for both regular software and AI development',icon:'/assets/images/f10.png',long:true}]
-# comm: [{img:"/assets/images/co1.png",name:"Twitter",link:"https://twitter.com/CycloneWorkflow"},{img:"/assets/images/co2.png",name:"Slack",link:"https://caicloud-cyclone.slack.com"},{img:"/assets/images/co3.png",name:"Users Groups",link:"https://cyclone-users.googlegroups.com"},{img:"/assets/images/co4.png",name:"Developers Groups",link:"https://cyclone-dev.googlegroups.com"}]
+# comm: [{img:"/assets/images/co1.png",name:"Twitter",link:"https://twitter.com/CycloneWorkflow"},{img:"/assets/images/co2.png",name:"Slack",link:"https://cycloneworkflow.slack.com"},{img:"/assets/images/co3.png",name:"Users Groups",link:"https://cyclone-users.googlegroups.com"},{img:"/assets/images/co4.png",name:"Developers Groups",link:"https://cyclone-dev.googlegroups.com"}]
 
 # Docs页面的数据
 docList:
